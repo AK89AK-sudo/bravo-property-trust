@@ -4,123 +4,119 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bravo Property Trust | Private Real Estate Credit</title>
-<meta name="description" content="Bravo Property Trust is a private real estate credit platform specializing in bridge and bridge-to-HUD financing for multifamily and healthcare real estate nationwide.">
+<meta name="description" content="Bravo Property Trust is a private real estate credit platform providing bridge, construction, and bridge-to-HUD financing for multifamily and healthcare real estate nationwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --navy:#0B2545; --navy2:#16254F; --ink:#101828; --gold:#A8842D; --gold2:#C9A94E;
-  --paper:#FCFBF8; --mist:#EEF1F6; --grey:#5C6470; --line:#E3E0D6;
-  --serif:'Source Serif 4',Georgia,serif; --sans:'Inter',-apple-system,Helvetica,sans-serif;
+  --ink:#0F110F; --ivory:#F5F3EE; --white:#FFFFFF; --green:#1C4433; --green-lt:#2C5C47;
+  --hair:rgba(15,17,15,.12); --serif:'Fraunces',Georgia,serif; --sans:'Inter',-apple-system,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.6}
-::selection{background:var(--gold2);color:#fff}
-.wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+body{font-family:var(--sans);color:var(--ink);background:var(--ivory);-webkit-font-smoothing:antialiased;line-height:1.6}
+::selection{background:var(--green);color:#fff}
+.wrap{max-width:1280px;margin:0 auto;padding:0 44px}
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(252,251,248,.92);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
-nav.scrolled{border-bottom-color:var(--line)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:76px}
-.wordmark{font-family:var(--serif);font-weight:600;font-size:19px;letter-spacing:.28em;color:var(--navy);text-decoration:none;text-transform:uppercase}
-.wordmark span{display:block;font-size:9.5px;letter-spacing:.52em;color:var(--gold);font-weight:400;margin-top:1px}
-.nav-links{display:flex;gap:36px;align-items:center}
-.nav-links a{font-size:13px;font-weight:500;letter-spacing:.06em;color:var(--ink);text-decoration:none;text-transform:uppercase;position:relative;padding:4px 0}
-.nav-links a:not(.cta)::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1.5px;background:var(--gold);transition:width .3s}
-.nav-links a:not(.cta):hover::after{width:100%}
-.cta{border:1.5px solid var(--navy);padding:10px 22px !important;color:var(--navy);transition:all .3s}
-.cta:hover{background:var(--navy);color:#fff !important}
+nav{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(15,17,15,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:82px}
+.logo-a img{height:32px;display:block}
+
+.nav-links{display:flex;gap:34px;align-items:center}
+.nav-links a{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#fff;transition:opacity .25s}
+.nav-links a:hover{opacity:.6}
+.nav-cta{border:1px solid rgba(255,255,255,.7);padding:11px 22px}
 /* HERO */
-header{position:relative;padding:210px 0 130px;background:
-  radial-gradient(1200px 600px at 85% -10%, rgba(168,132,45,.10), transparent 60%),
-  radial-gradient(900px 500px at -10% 110%, rgba(11,37,69,.07), transparent 55%),
-  var(--paper);overflow:hidden}
-header::before{content:'';position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px, transparent 1px),linear-gradient(90deg, var(--line) 1px, transparent 1px);background-size:120px 120px;opacity:.35;mask-image:radial-gradient(800px 500px at 70% 30%, black, transparent)}
-.eyebrow{font-size:12px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);margin-bottom:26px}
-h1{font-family:var(--serif);font-weight:300;font-size:clamp(44px,6.2vw,84px);line-height:1.04;color:var(--navy);letter-spacing:-.01em;max-width:15ch}
-h1 em{font-style:italic;color:var(--gold)}
-.hero-sub{margin-top:34px;font-size:19px;line-height:1.65;color:var(--grey);max-width:56ch}
-.hero-actions{margin-top:46px;display:flex;gap:18px;flex-wrap:wrap}
-.btn{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:16px 34px;transition:all .3s}
-.btn-solid{background:var(--navy);color:#fff;border:1.5px solid var(--navy)}
-.btn-solid:hover{background:var(--gold);border-color:var(--gold)}
-.btn-ghost{border:1.5px solid var(--navy);color:var(--navy)}
-.btn-ghost:hover{background:var(--navy);color:#fff}
-/* STATS */
-.stats{background:var(--navy);color:#fff;padding:84px 0}
-.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:48px}
-.stat .v{font-family:var(--serif);font-weight:300;font-size:clamp(38px,3.6vw,58px);line-height:1;color:#fff}
-.stat .v b{color:var(--gold2);font-weight:300}
-.stat .l{margin-top:14px;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.62);line-height:1.6}
-.stat{border-left:1px solid rgba(255,255,255,.16);padding-left:26px}
-.stats .note{margin-top:56px;font-size:12px;color:rgba(255,255,255,.4);max-width:70ch}
-/* SECTIONS */
-section{padding:120px 0}
-.sec-head{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;margin-bottom:74px;align-items:end}
-h2{font-family:var(--serif);font-weight:300;font-size:clamp(32px,3.6vw,52px);line-height:1.1;color:var(--navy)}
-.sec-head p{font-size:17px;color:var(--grey);line-height:1.7}
-/* STRATEGY CARDS */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line)}
-.card{background:var(--paper);padding:52px 42px;position:relative;transition:background .4s}
-.card:hover{background:#fff}
-.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:transparent;transition:background .4s}
-.card:hover::before{background:var(--gold)}
-.card .num{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--gold);letter-spacing:.1em}
-.card h3{font-family:var(--serif);font-weight:600;font-size:24px;color:var(--navy);margin:18px 0 16px;line-height:1.25}
-.card p{font-size:15px;color:var(--grey);line-height:1.7}
-.card ul{margin-top:20px;list-style:none}
-.card li{font-size:13.5px;color:var(--ink);padding:9px 0;border-top:1px solid var(--line);letter-spacing:.02em}
-.card li::before{content:'—';color:var(--gold);margin-right:10px}
-/* PLATFORM */
-.platform{background:var(--mist)}
-.plat-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;background:var(--line);border:1px solid var(--line)}
-.plat{background:var(--mist);padding:46px 44px;transition:background .3s}
-.plat:hover{background:#fff}
-.plat h4{font-family:var(--serif);font-size:21px;font-weight:600;color:var(--navy);margin-bottom:12px}
-.plat p{font-size:15px;color:var(--grey);line-height:1.7}
-/* QUOTE BAND */
-.quote{background:var(--navy);padding:130px 0;position:relative;overflow:hidden}
-.quote::before{content:'';position:absolute;inset:0;background:radial-gradient(700px 400px at 20% 20%, rgba(201,169,78,.12), transparent 60%)}
-.quote blockquote{position:relative;font-family:var(--serif);font-weight:300;font-style:italic;font-size:clamp(28px,3.4vw,46px);line-height:1.3;color:#fff;max-width:26ch;margin:0 auto;text-align:center}
-.quote blockquote b{color:var(--gold2);font-weight:300}
-.quote .attr{text-align:center;margin-top:30px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.55)}
-/* FOCUS */
-.focus-rows{border-top:1px solid var(--line)}
-.frow{display:grid;grid-template-columns:90px 1fr 1.6fr;gap:40px;align-items:baseline;padding:44px 0;border-bottom:1px solid var(--line);transition:padding-left .3s}
-.frow:hover{padding-left:14px}
-.frow .idx{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--gold)}
-.frow h3{font-family:var(--serif);font-weight:600;font-size:26px;color:var(--navy)}
-.frow p{font-size:15.5px;color:var(--grey);line-height:1.7}
-/* LEADERSHIP */
-.lead-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:70px;align-items:start}
-.lead-name{font-family:var(--serif);font-weight:600;font-size:30px;color:var(--navy)}
-.lead-title{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-top:8px}
-.lead-bio p{font-size:16px;color:var(--grey);line-height:1.8;margin-bottom:18px}
+header{position:relative;min-height:96vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('assets/pearl.jpg') center 30%/cover no-repeat}
+.hero-bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,12,10,.45) 0%,rgba(10,12,10,.18) 40%,rgba(10,12,10,.82) 100%)}
+.hero-inner{position:relative;padding:0 0 90px;width:100%}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.42em;text-transform:uppercase;color:rgba(255,255,255,.85);margin-bottom:24px}
+h1{font-family:var(--serif);font-weight:300;font-size:clamp(46px,6.4vw,92px);line-height:1.02;letter-spacing:-.015em;max-width:14ch}
+.hero-row{display:flex;justify-content:space-between;align-items:flex-end;gap:60px;flex-wrap:wrap}
+.hero-sub{max-width:44ch;font-size:16.5px;line-height:1.7;color:rgba(255,255,255,.82)}
+.hero-sub .btn{margin-top:26px}
+.btn{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;padding:16px 32px;transition:all .3s}
+.btn-w{border:1px solid rgba(255,255,255,.8);color:#fff}
+.btn-w:hover{background:#fff;color:var(--ink)}
+.btn-g{background:var(--green);color:#fff;border:1px solid var(--green)}
+.btn-g:hover{background:var(--ink);border-color:var(--ink)}
+.btn-k{border:1px solid var(--ink);color:var(--ink)}
+.btn-k:hover{background:var(--ink);color:#fff}
+/* MARQUEE STATS */
+.band{background:var(--ink);color:var(--ivory);padding:70px 0}
+.band-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:44px}
+.bstat .v{font-family:var(--serif);font-weight:300;font-size:clamp(36px,3.4vw,56px);line-height:1}
+.bstat .v i{font-style:normal;color:#7FB89E}
+.bstat .l{margin-top:12px;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,243,238,.55);line-height:1.7}
+.band .fine{margin-top:48px;font-size:11px;color:rgba(245,243,238,.35);max-width:72ch}
+/* SECTION SCAFFOLD */
+section{padding:130px 0}
+.sec-kicker{font-size:11.5px;font-weight:600;letter-spacing:.4em;text-transform:uppercase;color:var(--green);margin-bottom:20px}
+h2{font-family:var(--serif);font-weight:300;font-size:clamp(34px,3.8vw,58px);line-height:1.06;letter-spacing:-.01em}
+.sec-head{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:end;margin-bottom:70px}
+.sec-head p{font-size:16.5px;color:rgba(15,17,15,.66);line-height:1.75}
+/* FINANCINGS */
+.fin-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px}
+.fin{position:relative;display:block;text-decoration:none;color:#fff;overflow:hidden;background:var(--ink);min-height:420px}
+.fin img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.6,.2,1),opacity .5s;opacity:.85}
+.fin:hover img{transform:scale(1.045)}
+.fin::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(10,12,10,.88) 100%)}
+.fin-body{position:absolute;left:0;right:0;bottom:0;padding:30px;z-index:2}
+.fin-amt{font-family:var(--serif);font-weight:300;font-size:40px;line-height:1}
+.fin-t{margin-top:8px;font-size:13.5px;color:rgba(255,255,255,.85);line-height:1.55;max-width:40ch}
+.fin-loc{margin-top:12px;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:#9CC7B0}
+.f1{grid-column:span 7}.f2{grid-column:span 5}.f3{grid-column:span 5}.f4{grid-column:span 7}
+.fin.text{background:var(--green);min-height:420px}
+.fin.text::after{display:none}
+.fin.text .fin-body{top:0;display:flex;flex-direction:column;justify-content:space-between;padding:34px}
+.fin-note{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.more-row{margin-top:44px;text-align:center}
+/* STRATEGIES */
+.strat{background:var(--white)}
+.srow{display:grid;grid-template-columns:110px 1fr 1.5fr auto;gap:36px;align-items:center;padding:46px 0;border-top:1px solid var(--hair);transition:background .3s,padding-left .3s}
+.srow:last-child{border-bottom:1px solid var(--hair)}
+.srow:hover{background:var(--ivory);padding-left:16px}
+.srow .n{font-family:var(--serif);font-style:italic;font-weight:300;font-size:22px;color:var(--green)}
+.srow h3{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.15}
+.srow p{font-size:15px;color:rgba(15,17,15,.62);line-height:1.7}
+.srow .tag{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);white-space:nowrap}
+/* TEAM */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px 22px}
+.member{position:relative}
+.member .ph{position:relative;overflow:hidden;background:#E7E3DA;aspect-ratio:1/1.08}
+.member img{width:100%;height:100%;object-fit:cover;filter:saturate(.88);transition:filter .45s,transform .7s cubic-bezier(.2,.6,.2,1)}
+.member:hover img{filter:saturate(1.05);transform:scale(1.035)}
+.member .nm{font-family:var(--serif);font-weight:400;font-size:20px;margin-top:16px}
+.member .ti{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-top:4px}
+/* CAPITAL BAND */
+.cap{background:var(--green);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+.cap::before{content:'';position:absolute;right:-140px;top:-140px;width:520px;height:520px;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+.cap::after{content:'';position:absolute;right:-40px;top:-40px;width:320px;height:320px;border:1px solid rgba(255,255,255,.14);border-radius:50%}
+.cap h2{color:#fff;max-width:22ch}
+.cap p{margin-top:26px;font-size:17px;line-height:1.75;color:rgba(255,255,255,.82);max-width:60ch}
 /* CONTACT */
-.contact{background:var(--navy);color:#fff}
-.contact h2{color:#fff}
-.contact-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:70px;align-items:start}
-.contact p.big{font-family:var(--serif);font-weight:300;font-size:24px;line-height:1.5;color:rgba(255,255,255,.85);margin-top:26px}
-.c-item{border-top:1px solid rgba(255,255,255,.18);padding:24px 0}
-.c-item .k{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
-.c-item .v{font-size:17px;color:#fff;line-height:1.6}
-.c-item a{color:#fff;text-decoration:none;border-bottom:1px solid var(--gold2);padding-bottom:2px;transition:color .3s}
-.c-item a:hover{color:var(--gold2)}
+.contact-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:70px}
+.c-line{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--hair);padding:22px 0;font-size:16px}
+.c-line .k{font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:rgba(15,17,15,.5);padding-top:4px}
+.c-line a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--green);transition:color .3s}
+.c-line a:hover{color:var(--green)}
 /* FOOTER */
-footer{background:#081B33;color:rgba(255,255,255,.5);padding:56px 0;font-size:12.5px}
-.foot{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap}
-footer .fm{font-family:var(--serif);letter-spacing:.28em;color:rgba(255,255,255,.8);font-size:14px;text-transform:uppercase}
-footer p{max-width:75ch;line-height:1.7;margin-top:18px}
+footer{background:var(--ink);color:rgba(245,243,238,.5);padding:64px 0 48px;font-size:12px}
+.foot-top{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;margin-bottom:36px}
+.foot-top img{height:30px}
+footer p{max-width:80ch;line-height:1.7}
 /* REVEAL */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.6,.2,1),transform .8s cubic-bezier(.2,.6,.2,1)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.6,.2,1),transform .9s cubic-bezier(.2,.6,.2,1)}
 .rv.in{opacity:1;transform:none}
-@media(max-width:960px){
-  .stats-grid{grid-template-columns:repeat(2,1fr)}
-  .cards,.plat-grid{grid-template-columns:1fr}
-  .sec-head,.lead-grid,.contact-grid{grid-template-columns:1fr;gap:30px}
-  .frow{grid-template-columns:1fr;gap:10px}
-  .nav-links a:not(.cta){display:none}
+@media(max-width:1000px){
+  .band-grid,.team-grid{grid-template-columns:repeat(2,1fr)}
+  .sec-head,.contact-grid{grid-template-columns:1fr;gap:28px}
+  .f1,.f2,.f3,.f4{grid-column:span 12}
+  .srow{grid-template-columns:60px 1fr;gap:14px}
+  .srow p{grid-column:2}.srow .tag{display:none}
+  .nav-links a:not(.nav-cta){display:none}
   .wrap{padding:0 24px}
 }
 </style>
@@ -128,135 +124,141 @@ footer p{max-width:75ch;line-height:1.7;margin-top:18px}
 <body>
 
 <nav id="nav"><div class="wrap nav-inner">
-  <a class="wordmark" href="#top">Bravo<span>Property Trust</span></a>
+  <a class="logo-a" href="#top">
+    <img src="assets/logo-white.png" alt="Bravo Property Trust">
+  </a>
   <div class="nav-links">
-    <a href="#platform">Platform</a>
+    <a href="#financings">Financings</a>
     <a href="#strategies">Strategies</a>
-    <a href="#discipline">Discipline</a>
-    <a href="#leadership">Leadership</a>
-    <a href="#contact" class="cta">Partner With Us</a>
+    <a href="#team">Team</a>
+    <a href="https://app.junipersquare.com/i/bravocapital" target="_blank" rel="noopener">Investor Login</a>
+    <a href="#contact" class="nav-cta">Contact</a>
   </div>
 </div></nav>
 
-<header id="top"><div class="wrap">
-  <div class="eyebrow rv">Private Real Estate Credit</div>
-  <h1 class="rv">Institutional capital.<br><em>Relationship</em> lending.</h1>
-  <p class="hero-sub rv">Bravo Property Trust is a private real estate credit platform specializing in the origination of bridge and bridge&#8209;to&#8209;HUD financing for multifamily and healthcare real estate nationwide. Working in conjunction with affiliate firm Bravo Capital, we partner with experienced sponsors on transactions with a clearly defined exit.</p>
-  <div class="hero-actions rv">
-    <a class="btn btn-solid" href="#contact">Discuss a Transaction</a>
-    <a class="btn btn-ghost" href="#strategies">Our Strategies</a>
+<header id="top">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-row">
+      <div>
+        <div class="kicker rv">Private Real Estate Credit</div>
+        <h1 class="rv">Capital for the builders of American housing.</h1>
+      </div>
+      <div class="hero-sub rv">
+        <p>Bravo Property Trust originates bridge, construction, and bridge&#8209;to&#8209;HUD financing for multifamily and healthcare real estate nationwide, in conjunction with affiliate firm Bravo Capital.</p>
+        <a class="btn btn-w" href="#contact">Discuss a Transaction</a>
+      </div>
+    </div>
   </div>
-</div></header>
+</header>
 
-<div class="stats"><div class="wrap">
-  <div class="stats-grid">
-    <div class="stat rv"><div class="v">$2<b>B+</b></div><div class="l">Closed nationwide with affiliates</div></div>
-    <div class="stat rv"><div class="v">60<b>+</b></div><div class="l">Loans originated across the platform</div></div>
-    <div class="stat rv"><div class="v">20<b>+</b></div><div class="l">States with financed properties</div></div>
-    <div class="stat rv"><div class="v">MAP <b>&amp;</b> LEAN</div><div class="l">HUD-approved affiliate lending platform</div></div>
+<div class="band"><div class="wrap">
+  <div class="band-grid">
+    <div class="bstat rv"><div class="v">$2<i>B+</i></div><div class="l">Closed nationwide with affiliates</div></div>
+    <div class="bstat rv"><div class="v">$400<i>M</i></div><div class="l">Sovereign-backed lending capacity</div></div>
+    <div class="bstat rv"><div class="v">20<i>+</i></div><div class="l">States with financed properties</div></div>
+    <div class="bstat rv"><div class="v">HUD</div><div class="l">MAP &amp; LEAN approved affiliate platform</div></div>
   </div>
-  <div class="note rv">Statistics reflect the combined activity of Bravo Property Trust, Bravo Capital, and their affiliates.</div>
+  <div class="fine rv">Statistics reflect the combined activity of Bravo Property Trust, Bravo Capital, and their affiliates.</div>
 </div></div>
 
-<section id="platform"><div class="wrap">
+<section id="financings"><div class="wrap">
   <div class="sec-head">
-    <h2 class="rv">The Platform</h2>
-    <p class="rv">Bravo Property Trust originates and manages commercial real estate credit with the discipline of an institution and the speed of a principal. Every loan is underwritten to a defined exit, most commonly a HUD-insured permanent financing executed by our affiliate, Bravo Capital, one of the nation&rsquo;s active HUD MAP and LEAN approved lenders.</p>
+    <div><div class="sec-kicker rv">Recent Financings</div><h2 class="rv">Institutional execution, principal speed.</h2></div>
+    <p class="rv">A selection of recently closed transactions across construction, lease&#8209;up, and land, from flagship condominium development to workforce multifamily.</p>
   </div>
-  <div class="plat-grid">
-    <div class="plat rv"><h4>Certainty of Execution</h4><p>As a balance-sheet lender with committed capital partners, we close on the terms we quote, on the timeline sponsors need.</p></div>
-    <div class="plat rv"><h4>A Defined Exit, By Design</h4><p>Bridge loans are structured from day one around the permanent takeout, with the HUD path underwritten in parallel by our affiliate platform.</p></div>
-    <div class="plat rv"><h4>Institutional Underwriting</h4><p>Credit-first structuring: milestone-gated funding, cash management, and covenant discipline that protects sponsors and capital alike.</p></div>
-    <div class="plat rv"><h4>Relationship Lending</h4><p>Whether a national operator or a first-time sponsor, every borrower works directly with senior decision-makers from term sheet to payoff.</p></div>
+  <div class="fin-grid">
+    <a class="fin f1 rv" href="https://bravopropertytrust.com/125mm-construction-loan-in-dumbo-financed-by-bravo-property-trust-and-integritas-capital/" target="_blank" rel="noopener">
+      <img src="assets/pearl.jpg" alt="175 Pearl Street, DUMBO">
+      <div class="fin-body"><div class="fin-amt">$125M</div><div class="fin-t">Construction financing for a 185-residence tower in DUMBO, with Integritas Capital</div><div class="fin-loc">Brooklyn, New York</div></div>
+    </a>
+    <a class="fin f2 fin text rv" href="https://bravopropertytrust.com/bravo-property-trust-provides-170-million-construction-and-land-loan-for-flagship-condominium-development-in-miamis-edgewater/" target="_blank" rel="noopener">
+      <div class="fin-body"><div class="fin-note">Featured</div><div><div class="fin-amt">$170M</div><div class="fin-t">Construction and land loan for a flagship condominium development in Miami&rsquo;s Edgewater</div><div class="fin-loc">Miami, Florida</div></div></div>
+    </a>
+    <a class="fin f3 rv" href="https://bravopropertytrust.com/bravo-property-trust-closes-68-million-senior-construction-loan-for-180-unit-waterfront-development-in-bayonne-new-jersey/" target="_blank" rel="noopener">
+      <img src="assets/bayonne.jpg" alt="Bayonne waterfront development">
+      <div class="fin-body"><div class="fin-amt">$68M</div><div class="fin-t">Senior construction loan for a 180-unit waterfront development</div><div class="fin-loc">Bayonne, New Jersey</div></div>
+    </a>
+    <a class="fin f4 rv" href="https://bravopropertytrust.com/bravo-property-trust-closes-36-75-million-senior-construction-loan-for-multifamily-project-on-amsterdam-ave-in-upper-manhattan/" target="_blank" rel="noopener">
+      <img src="assets/amsterdam.jpg" alt="Amsterdam Avenue development site">
+      <div class="fin-body"><div class="fin-amt">$36.75M</div><div class="fin-t">Senior construction loan for a multifamily project on Amsterdam Avenue</div><div class="fin-loc">Upper Manhattan, New York</div></div>
+    </a>
+  </div>
+  <div class="more-row rv"><a class="btn btn-k" href="https://bravopropertytrust.com/news/" target="_blank" rel="noopener">All News &amp; Transactions</a></div>
+</div></section>
+
+<section id="strategies" class="strat"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="sec-kicker rv">Strategies</div><h2 class="rv">Credit across the life of an asset.</h2></div>
+    <p class="rv">Every loan is underwritten to a defined exit, most commonly a HUD-insured permanent financing executed by affiliate Bravo Capital.</p>
+  </div>
+  <div>
+    <div class="srow rv"><div class="n">i.</div><h3>Bridge &amp; Construction</h3><p>First-mortgage bridge and construction financing for multifamily and healthcare assets in acquisition, development, lease-up, or repositioning.</p><div class="tag">Senior Secured</div></div>
+    <div class="srow rv"><div class="n">ii.</div><h3>Bridge-to-HUD</h3><p>Interim capital engineered from day one to bridge into a HUD-insured permanent loan, 223(f), 221(d)(4), and 232, processed by our MAP and LEAN approved affiliate.</p><div class="tag">Defined Exit</div></div>
+    <div class="srow rv"><div class="n">iii.</div><h3>Mezzanine &amp; Structured</h3><p>Subordinate and structured positions completing the capital stack for experienced sponsors, with aligned, credit-first terms.</p><div class="tag">Capital Stack</div></div>
   </div>
 </div></section>
 
-<section id="strategies" style="padding-top:0"><div class="wrap">
-  <div class="sec-head">
-    <h2 class="rv">Strategies</h2>
-    <p class="rv">Flexible capital across the life of an asset, from acquisition and lease-up through stabilization and permanent financing.</p>
-  </div>
-  <div class="cards">
-    <div class="card rv">
-      <div class="num">01</div>
-      <h3>Bridge Lending</h3>
-      <p>First-mortgage bridge financing for multifamily and healthcare assets in acquisition, lease-up, or repositioning, structured for speed and flexibility.</p>
-      <ul><li>Multifamily &amp; healthcare</li><li>Lease-up &amp; stabilization</li><li>Nationwide, major markets</li></ul>
-    </div>
-    <div class="card rv">
-      <div class="num">02</div>
-      <h3>Bridge-to-HUD</h3>
-      <p>Our signature execution: interim capital engineered to bridge directly into a HUD-insured permanent loan processed by affiliate Bravo Capital.</p>
-      <ul><li>223(f) &amp; 221(d)(4) takeouts</li><li>232 healthcare programs</li><li>One integrated process</li></ul>
-    </div>
-    <div class="card rv">
-      <div class="num">03</div>
-      <h3>Mezzanine &amp; Structured Credit</h3>
-      <p>Subordinate and structured positions for experienced sponsors, completing the capital stack behind senior financing with aligned terms.</p>
-      <ul><li>Mezzanine loans</li><li>Preferred structures</li><li>Participations</li></ul>
-    </div>
-  </div>
-</div></section>
-
-<div class="quote"><div class="wrap">
-  <blockquote class="rv">&ldquo;Where institutional capital meets <b>relationship lending</b>.&rdquo;</blockquote>
-  <div class="attr rv">The Bravo Platform</div>
+<div class="cap"><div class="wrap">
+  <div class="sec-kicker rv" style="color:#9CC7B0">Institutional Capital</div>
+  <h2 class="rv">Backed by institutional partners, including a sovereign wealth fund manager.</h2>
+  <p class="rv">Bravo Property Trust secured a sovereign wealth fund manager investment to finance up to $400 million in bridge and construction loans, capital that lets us close on the terms we quote, on the timelines sponsors need.</p>
 </div></div>
 
-<section id="discipline"><div class="wrap">
+<section id="team"><div class="wrap">
   <div class="sec-head">
-    <h2 class="rv">Credit Discipline</h2>
-    <p class="rv">Our record is built on paper that protects capital: structure, visibility, and control from origination through resolution.</p>
+    <div><div class="sec-kicker rv">The Team</div><h2 class="rv">Senior people on every loan.</h2></div>
+    <p class="rv">Underwriting, credit, originations, servicing, and legal under one roof. Every borrower works directly with decision-makers from term sheet to payoff.</p>
   </div>
-  <div class="focus-rows">
-    <div class="frow rv"><div class="idx">i.</div><h3>Underwrite the exit first</h3><p>Every bridge loan begins with the permanent financing it will become. Sizing, covenants, and milestones are all built backward from a defined takeout.</p></div>
-    <div class="frow rv"><div class="idx">ii.</div><h3>Structure over hope</h3><p>Milestone-gated advances, controlled cash management, meaningful recourse, and reporting discipline on every transaction, for every sponsor.</p></div>
-    <div class="frow rv"><div class="idx">iii.</div><h3>Collateral-first credit</h3><p>We lend against real assets at conservative attachment points, with third-party valuation and independent diligence on every loan.</p></div>
-    <div class="frow rv"><div class="idx">iv.</div><h3>Active asset management</h3><p>Post-closing, every position is monitored through stabilization with the same rigor it was underwritten, protecting sponsors, investors, and the platform.</p></div>
+  <div class="team-grid">
+    <div class="member rv"><div class="ph"><img src="assets/aaron.jpg" alt="Aaron Krawitz"></div><div class="nm">Aaron Krawitz</div><div class="ti">Founder &amp; CEO</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/aidan.jpg" alt="Aidan Birnbaum"></div><div class="nm">Aidan Birnbaum</div><div class="ti">Head of Credit</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/fisher.jpg" alt="Matthew Fisher"></div><div class="nm">Matthew Fisher</div><div class="ti">Chief Underwriter</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/bruce.jpg" alt="Bruce Goldner"></div><div class="nm">Bruce Goldner</div><div class="ti">General Counsel</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/ryan.jpg" alt="Ryan Patterson"></div><div class="nm">Ryan Patterson</div><div class="ti">Deputy Chief Underwriter</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/mitchell.jpg" alt="Mitchell Reiser"></div><div class="nm">Mitchell Reiser</div><div class="ti">Deputy Chief Underwriter</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/elan.jpg" alt="Elan Goldberg"></div><div class="nm">Elan Goldberg</div><div class="ti">Co-Head, Originations</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/oliver.jpg" alt="Oliver Katselnik"></div><div class="nm">Oliver Katselnik</div><div class="ti">Originations</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/jillian.jpg" alt="Jillian Rush"></div><div class="nm">Jillian Rush</div><div class="ti">Asset Management &amp; Loan Processing</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/jacob.jpg" alt="Jacob Albright"></div><div class="nm">Jacob Albright</div><div class="ti">Underwriting</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/jeremy.jpg" alt="Jeremy Frank"></div><div class="nm">Jeremy Frank</div><div class="ti">Underwriting</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/ben.jpg" alt="Ben Orbach"></div><div class="nm">Ben Orbach</div><div class="ti">Relationship Manager</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/alayna.jpg" alt="Alayna Izen"></div><div class="nm">Alayna Izen</div><div class="ti">Relationship Manager</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/igor.jpg" alt="Igor Shnitser"></div><div class="nm">Igor Shnitser</div><div class="ti">Controller</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/kiril.jpg" alt="Kiril Kirilov"></div><div class="nm">Kiril Kirilov</div><div class="ti">Head of Marketing</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/amberley.jpg" alt="Amberley Tapp"></div><div class="nm">Amberley Tapp</div><div class="ti">Human Resources</div></div>
+    <div class="member rv"><div class="ph"><img src="assets/jill.jpg" alt="Jill Oestreicher"></div><div class="nm">Jill Oestreicher</div><div class="ti">Office Manager</div></div>
   </div>
 </div></section>
 
-<section id="leadership" style="padding-top:40px"><div class="wrap">
-  <div class="sec-head"><h2 class="rv">Leadership</h2><p class="rv"></p></div>
-  <div class="lead-grid">
-    <div class="rv">
-      <div class="lead-name">Aaron Krawitz</div>
-      <div class="lead-title">Chief Executive Officer &amp; Founder</div>
-    </div>
-    <div class="lead-bio rv">
-      <p>Aaron Krawitz is the Founder and Chief Executive Officer of Bravo Property Trust and Bravo Capital. Under his leadership, the Bravo platform has grown into a national real estate credit business, with over $2 billion in financings closed across bridge, mezzanine, and HUD-insured executions.</p>
-      <p>Bravo&rsquo;s leadership team has overseen billions of dollars in HUD-insured financings, and brings together underwriting, servicing, and capital markets under one roof.</p>
-    </div>
-  </div>
-</div></section>
-
-<section id="contact" class="contact"><div class="wrap">
+<section id="contact" style="padding-top:20px"><div class="wrap">
   <div class="contact-grid">
     <div>
-      <h2 class="rv">Partner With Us</h2>
-      <p class="big rv">Have a transaction in mind? Speak directly with a decision-maker.</p>
+      <div class="sec-kicker rv">Contact</div>
+      <h2 class="rv">Have a transaction in&nbsp;mind?</h2>
+      <p class="rv" style="margin-top:24px;font-size:17px;color:rgba(15,17,15,.66);max-width:46ch">Speak directly with a decision-maker. Term sheets in days, not weeks.</p>
+      <div class="rv" style="margin-top:34px"><a class="btn btn-g" href="tel:+12127294962">Call +1 (212) 729-4962</a></div>
     </div>
     <div class="rv">
-      <div class="c-item"><div class="k">Headquarters</div><div class="v">780 Third Avenue<br>New York, NY 10017</div></div>
-      <div class="c-item"><div class="k">Affiliate Platform</div><div class="v"><a href="https://bravocapital.com" target="_blank" rel="noopener">bravocapital.com</a></div></div>
-      <div class="c-item"><div class="k">Financing Inquiries</div><div class="v"><a href="https://bravocapital.com/bravo-loan-inquiry/" target="_blank" rel="noopener">Start a loan inquiry</a></div></div>
+      <div class="c-line"><div class="k">Headquarters</div><div>780 Third Avenue<br>New York, NY 10017</div></div>
+      <div class="c-line"><div class="k">Affiliate</div><div><a href="https://bravocapital.com" target="_blank" rel="noopener">bravocapital.com</a></div></div>
+      <div class="c-line"><div class="k">Investors</div><div><a href="https://app.junipersquare.com/i/bravocapital" target="_blank" rel="noopener">Investor portal</a></div></div>
+      <div class="c-line"><div class="k">Follow</div><div><a href="https://www.linkedin.com/company/bravo-property-trust/" target="_blank" rel="noopener">LinkedIn</a></div></div>
     </div>
   </div>
 </div></section>
 
 <footer><div class="wrap">
-  <div class="foot">
-    <div><div class="fm">Bravo Property Trust</div></div>
-    <div style="text-align:right">&copy; 2026 Bravo Property Trust LLC. All rights reserved.</div>
+  <div class="foot-top">
+    <img src="assets/logo-white.png" alt="Bravo Property Trust">
+    <div>&copy; 2026 Bravo Property Trust LLC. All rights reserved.</div>
   </div>
   <p>This website is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to purchase any security, or a commitment to lend. Financing statistics reflect the combined activity of Bravo Property Trust, Bravo Capital, and their affiliates. All loans are subject to underwriting and credit approval.</p>
 </div></footer>
 
 <script>
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10));
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4*70)+'ms';io.observe(el)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4*80)+'ms';io.observe(el)});
 </script>
 </body>
 </html>
